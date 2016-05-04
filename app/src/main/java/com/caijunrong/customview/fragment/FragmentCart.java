@@ -1,0 +1,24 @@
+package com.caijunrong.customview.fragment;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+
+import com.caijunrong.customview.R;
+
+/**
+ * Created by biyabi on 16/5/4.
+ */
+public class FragmentCart  extends Fragment{
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_fragment_cart, container, false);
+    }
+
+}

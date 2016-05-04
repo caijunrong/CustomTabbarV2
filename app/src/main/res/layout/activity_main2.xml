@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<com.caijunrong.customview.CustomDrawView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/bottom_layout"-->
+        <!--android:background="@color/colorgrey">-->
+
+    <!--</com.caijunrong.customview.CustomDrawView>-->
+
+    <com.caijunrong.customview.NoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:id="@+id/viewpager_main_v2">
+    </com.caijunrong.customview.NoScrollViewPager>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        >
+
+        <com.caijunrong.customview.CustomXMLView
+            android:id="@+id/tab_btn_01"
+            android:clickable="true"
+            android:onClick="bottomTabClick"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            app:showName2="@string/app_home_name"
+            app:textColor2="@color/colorBlack"
+            app:showImage2="@drawable/icon_tab_home_grey"
+            app:selectedShowImage="@drawable/icon_tab_home_red"
+            app:selectedTextColor2="@color/barcolor"
+            >
+
+        </com.caijunrong.customview.CustomXMLView>
+
+
+        <com.caijunrong.customview.CustomXMLView
+            android:id="@+id/tab_btn_02"
+            android:clickable="true"
+            android:onClick="bottomTabClick"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            app:showName2="@string/app_search_name"
+            app:textColor2="@color/colorBlack"
+            app:showImage2="@drawable/icon_tab_search_grey"
+            app:selectedShowImage="@drawable/icon_tab_search_red"
+            app:selectedTextColor2="@color/barcolor"
+            >
+
+        </com.caijunrong.customview.CustomXMLView>
+
+        <com.caijunrong.customview.CustomXMLView
+            android:id="@+id/tab_btn_03"
+            android:clickable="true"
+            android:onClick="bottomTabClick"
+            android:paddingTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            app:showName2="@string/app_share_order"
+            app:textColor2="@color/colorBlack"
+            app:showImage2="@drawable/icon_tab_shareorder_grey"
+            app:selectedShowImage="@drawable/icon_tab_shareorder_red"
+            app:selectedTextColor2="@color/barcolor"
+            >
+
+        </com.caijunrong.customview.CustomXMLView>
+
+
+        <com.caijunrong.customview.CustomXMLView
+            android:id="@+id/tab_btn_04"
+            android:paddingTop="6dp"
+            android:clickable="true"
+            android:onClick="bottomTabClick"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            app:showName2="@string/app_cart_name"
+            app:textColor2="@color/colorBlack"
+            app:showImage2="@drawable/icon_tab_cart_grey"
+            app:selectedShowImage="@drawable/icon_tab_cart_red"
+            app:selectedTextColor2="@color/barcolor"
+            >
+
+        </com.caijunrong.customview.CustomXMLView>
+
+        <com.caijunrong.customview.CustomXMLView
+            android:id="@+id/tab_btn_05"
+            android:paddingTop="6dp"
+            android:clickable="true"
+            android:onClick="bottomTabClick"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            app:showName2="@string/app_center_name"
+            app:textColor2="@color/colorBlack"
+            app:showImage2="@drawable/icon_tab_user_grey"
+            app:selectedShowImage="@drawable/icon_tab_user_red"
+            app:selectedTextColor2="@color/barcolor"
+            >
+
+        </com.caijunrong.customview.CustomXMLView>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

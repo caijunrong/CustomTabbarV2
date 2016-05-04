@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomDrawView">
+        <attr name="showName" format="string" />
+        <attr name="textColor"  format="reference|color"/>
+        <attr name="showImage" format="reference"/>
+    </declare-styleable>
+
+<declare-styleable name="CustomXMLView">
+    <attr name="showName2" format="string" />
+    <attr name="textColor2"  format="reference|color"/>
+    <attr name="showImage2" format="reference"/>
+    <attr name="selectedShowImage" format="reference"/>
+    <attr name="selectedTextColor2"  format="reference|color"/>
+</declare-styleable>
+</resources>
